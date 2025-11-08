@@ -1,4 +1,5 @@
 #include <SimulationHandler.h>
+#include <GUI.h>
 
 int main(){
 

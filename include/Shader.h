@@ -5,7 +5,7 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <glm-1.0.1/glm/glm.hpp>
+#include <libs/glm/glm.hpp>
 #include <string>
 #include <fstream>
 #include <sstream>

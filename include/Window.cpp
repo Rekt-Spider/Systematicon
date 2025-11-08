@@ -1,5 +1,4 @@
 #include <Window.h>
-#include <Camera.h>
 
 
 Window::Window(unsigned int width = 1280, unsigned int height = 720)
