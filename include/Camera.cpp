@@ -28,12 +28,13 @@ Camera::Camera(glm::vec3 position, glm::vec3 up, float yaw, float pitch) :
         return glm::lookAt(Position, Position + Front, Up);
     }
 
-    // processes input received from any keyboard-like input system. Accepts input parameter in the form of camera defined ENUM (to abstract it from windowing systems)
+    // processes input received from any keyboard-like input system. Accepts input parameter in the form of camera defined ENUM
     void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime, Camera_Setting_Toggles toggle)
     {
         if (toggle == LOCK_MOVEMENT)
             MovementLock = !MovementLock;
         if (MovementLock) return;
+        
         float velocity = MovementSpeed * deltaTime;
         if (direction == FORWARD)
             Position += Front * velocity;

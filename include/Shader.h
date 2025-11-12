@@ -39,4 +39,4 @@ public:
 	unsigned int getID();
 };
 
-#endif /SHADER_H
+#endif

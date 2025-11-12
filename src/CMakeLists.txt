@@ -45,6 +45,8 @@ add_library(ImGui STATIC
 target_include_directories(ImGui PUBLIC 
     ${IMGUI_DIR}
     ${PROJECT_SOURCE_DIR}/../libs/backends
+    ${PROJECT_SOURCE_DIR}/../libs
+
 )
 
 # Include GLM
@@ -65,12 +67,14 @@ target_include_directories(HandlerLib PUBLIC
     ${PROJECT_SOURCE_DIR}
     ${PROJECT_SOURCE_DIR}/..
     ${PROJECT_SOURCE_DIR}/../include
+    ${PROJECT_SOURCE_DIR}/../libs
     ${PROJECT_SOURCE_DIR}/../libs/glad
 )
 
 # Make HandlerLib depend on GLAD
 target_link_libraries(HandlerLib
     PUBLIC GLAD
+    PUBLIC ImGui
 )
 
 # Set C++20 standard for HandlerLib

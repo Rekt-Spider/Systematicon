@@ -1,9 +1,9 @@
 #include <SimulationHandler.h>
-#include <GUI.h>
 
 int main(){
-
-    run();
+    
+    SimulationHandler* simHandle = SimulationHandler::instance();
+    simHandle->run();
 
     return 0;
 }

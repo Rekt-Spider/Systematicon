@@ -1,7 +1,7 @@
 #include <iostream>
 #include <GUI.h>
 
-enum Setting{
+enum Settings{
     PAUSE,
     LOCALIZED_VIEW,
     SIM_SPEED,
@@ -12,4 +12,16 @@ enum Setting{
     HIDE_GUI
 };
 
-void run();
+class SimulationHandler
+{
+public:
+    static SimulationHandler* instance();
+    void run();
+private:
+    /* data */
+    static SimulationHandler* theInstance;
+    SimulationHandler();
+    ~SimulationHandler();
+};
+
+

@@ -10,7 +10,7 @@ Window::Window(unsigned int width = 1280, unsigned int height = 720)
 
 
 	
-	window = glfwCreateWindow(width, height, "GLSL Suite", NULL, NULL);
+	window = glfwCreateWindow(width, height, "Systematicon", NULL, NULL);
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;

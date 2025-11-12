@@ -2,6 +2,7 @@
 #include <glad/glad.h>
 #include <libs/glm/glm.hpp>
 #include <libs/glm/gtc/matrix_transform.hpp>
+#include <libs/glm/gtc/type_ptr.inl>
 
 	enum Camera_Movement
 	{
